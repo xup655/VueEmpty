@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-      <img alt="Vue logo" src="../assets/logo.png">
+      <VueLogoImage />
       <test msg="This is an test page"/>
       <about msg="This is an about page"/>
     
@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import VueLogoImage from '@/components/VueLogoImage.vue'
 import test from '@/components/test.vue'
 import about from '@/components/about.vue'
 
@@ -15,6 +16,7 @@ import about from '@/components/about.vue'
 export default {
   name: 'home',
   components: {
+    VueLogoImage,
     test,
     about
   }

@@ -1,5 +1,11 @@
 <template>
   <div id="app">
+
+    <div class="path">
+      方法一、route.path:<br>{{ this.$route.path }} <br>
+      方法二、router.history.current:<br>{{ $router.history.current['path'] }} <br><br>
+    </div>
+
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
